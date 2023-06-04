@@ -7,7 +7,8 @@ const BaselineDocument = () => {
   useEffect(() => {
     // Fetch the omxpbaseline document from the server
     // axios.get('/api/omxpbaseline')
-    axios.get('https://bishumoharana-automatic-eureka-gx7p9967xjhp4xw-5000.preview.app.github.dev/api/omxpbaseline')
+    // axios.get('https://bishumoharana-automatic-eureka-gx7p9967xjhp4xw-5000.preview.app.github.dev/api/omxpbaseline')
+    axios.get('localhost:5005/api/omxpbaseline')
       .then((response) => {
         // Get the first document from the response
         const [firstDocument] = response.data;
